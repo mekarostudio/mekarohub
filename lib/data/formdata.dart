@@ -18,4 +18,12 @@ class FormData with ChangeNotifier {
   InputModel? getModel(String name) {
     return _inputs[name];
   }
+
+  void check() {
+    for (var model in _inputs.values) {
+      model.check();
+    }
+
+    notifyListeners();
+  }
 }

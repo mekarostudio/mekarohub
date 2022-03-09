@@ -14,16 +14,19 @@ class LoginForm extends StatelessWidget {
     final password = formData.getModel("password");
 
     return Container(
-      child: Column(
-        children: [
-          InputFild(
-            marginTop: 30,
-            model: username!,
-          ),
-          InputFild(
-            model: password!,
-          ),
-        ],
+      child: Form(
+        key: formData.key,
+        child: Column(
+          children: [
+            InputFild(
+              marginTop: 30,
+              model: username!,
+            ),
+            InputFild(
+              model: password!,
+            ),
+          ],
+        ),
       ),
     );
   }

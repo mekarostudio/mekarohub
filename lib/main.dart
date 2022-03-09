@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mekarohub/screen/signupscreen.dart';
 
 import './screen/firstscreen.dart';
 import './screen/loginscreen.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
               headline1: const TextStyle(
                 fontFamily: 'Poppins',
                 fontWeight: FontWeight.w800,
-                fontSize: 38,
+                fontSize: 32,
                 color: Colors.black,
               ),
               subtitle1: const TextStyle(
@@ -44,13 +45,13 @@ class MyApp extends StatelessWidget {
               bodyText1: const TextStyle(
                 fontFamily: 'Montserrat_Alternates',
                 fontWeight: FontWeight.w300,
-                fontSize: 18,
+                fontSize: 17,
                 color: Colors.black,
               ),
               button: const TextStyle(
                 fontFamily: 'Montserrat_Alternates',
                 fontWeight: FontWeight.w700,
-                fontSize: 18,
+                fontSize: 15,
                 color: Colors.white,
               ),
               caption: const TextStyle(
@@ -66,6 +67,7 @@ class MyApp extends StatelessWidget {
       routes: {
         FirstScreen.url: (ctx) => const FirstScreen(),
         LoginScreen.url: (ctx) => const LoginScreen(),
+        SignUpScreen.url: (ctx) => const SignUpScreen(),
       },
       debugShowCheckedModeBanner: false,
     );

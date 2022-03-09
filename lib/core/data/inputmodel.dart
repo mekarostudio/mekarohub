@@ -27,7 +27,8 @@ class InputModel {
       error = "the $name is required";
       return false;
     }
-
+    print(error);
+    error = "";
     return true;
   }
 }

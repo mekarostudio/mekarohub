@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../gui/buttonstylea.dart';
 
 import './loginscreen.dart';
+import './signupscreen.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
@@ -55,7 +56,8 @@ class FirstScreen extends StatelessWidget {
                     ),
                     ButtonStyleA(
                       text: 'Sign Up',
-                      onPressed: () {},
+                      onPressed: () =>
+                          Navigator.of(context).pushNamed(SignUpScreen.url),
                     ),
                   ],
                 ),
