@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import './screen/firstscreen.dart';
+import './screen/loginscreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // Work asycn
@@ -37,20 +38,34 @@ class MyApp extends StatelessWidget {
               subtitle1: const TextStyle(
                 fontFamily: 'Montserrat_Alternates',
                 fontWeight: FontWeight.w300,
-                fontSize: 22,
+                fontSize: 20,
+                color: Colors.black,
+              ),
+              bodyText1: const TextStyle(
+                fontFamily: 'Montserrat_Alternates',
+                fontWeight: FontWeight.w300,
+                fontSize: 18,
                 color: Colors.black,
               ),
               button: const TextStyle(
                 fontFamily: 'Montserrat_Alternates',
                 fontWeight: FontWeight.w700,
-                fontSize: 20,
+                fontSize: 18,
                 color: Colors.white,
+              ),
+              caption: const TextStyle(
+                fontFamily: 'Montserrat_Alternates',
+                fontWeight: FontWeight.w300,
+                fontStyle: FontStyle.italic,
+                fontSize: 17,
+                color: Colors.black87,
               ),
             ),
       ),
       home: const FirstScreen(),
       routes: {
         FirstScreen.url: (ctx) => const FirstScreen(),
+        LoginScreen.url: (ctx) => const LoginScreen(),
       },
       debugShowCheckedModeBanner: false,
     );
