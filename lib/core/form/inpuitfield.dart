@@ -19,6 +19,7 @@ class InputFild extends StatelessWidget {
 
     if (value.isNotEmpty) {
       controller.text = value;
+
       controller.selection =
           TextSelection.fromPosition(TextPosition(offset: value.length));
     }
